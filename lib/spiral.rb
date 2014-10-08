@@ -6,14 +6,11 @@ class Spiral
     num=1
     width=4
     grid=[]
-    while num < width do
-     grid << (num..4).to_a
-      num +=1
-    end
-    return grid
+
+    grid << (num..width).to_a
+    grid << (((num*10)-(width-1))..(num*10)).to_a.reverse
 
 
-    
   end
 
 end
